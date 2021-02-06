@@ -1,0 +1,30 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    //this defines what 1rem is.
+    
+    font-size: 62.5%; // ! 1rem = 10px;  10px/16px = 62.5%
+}
+
+
+body {
+    box-sizing: border-box;
+    font-family: Spartan;
+}
+
+
+:root {
+    // primary colors
+
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    // neutral colors
+
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+}
