@@ -1,7 +1,7 @@
 .container {
-  margin: 9rem 0;
-  margin-left: 15rem;
-  margin-right: 10rem; }
+  width: 80%;
+  margin: 0 auto;
+  font-size: 15px; }
 
 .section-about {
   display: flex;
@@ -15,7 +15,9 @@
   width: 50%; }
   .information__tittle {
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 900;
+    font-family: 'Spartan' Helvetica;
+    letter-spacing: 2px;
     color: var(--very-dark-magenta);
     margin-bottom: 1rem; }
   .information__info {
@@ -26,9 +28,10 @@
 .rating {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   padding: 1rem;
   width: 50%;
-  margin-right: 15rem; }
+  margin-right: 3rem; }
   .rating__reviews {
     display: flex;
     justify-content: start;
@@ -72,6 +75,45 @@
     font-weight: 700;
     color: var(--very-dark-magenta); }
 
+.section-messages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+  height: 17rem; }
+
+.card {
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: var(--very-dark-magenta);
+  padding: 3rem;
+  margin: 0 2rem;
+  border-radius: 10px;
+  height: 80%; }
+  .card__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem; }
+    .card__top--photo {
+      height: 3.5rem;
+      width: 3.5rem;
+      border-radius: 50%;
+      margin-right: 2rem; }
+    .card__top--name {
+      color: #ffffff;
+      margin-bottom: 0.5rem; }
+    .card__top--job {
+      color: var(--dark-grayish-magenta); }
+  .card__bottom--message {
+    color: var(--light-grayish-magenta);
+    margin-bottom: 1rem; }
+  .card--1 {
+    align-self: flex-end; }
+  .card--2 {
+    align-self: center; }
+  .card--3 {
+    align-self: flex-start; }
+
 *, *::after, *::before {
   margin: 0;
   padding: 0; }
@@ -81,7 +123,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: Spartan; }
+  font-family: 'Spartan'; }
 
 :root {
   --very-dark-magenta: hsl(300, 43%, 22%);
