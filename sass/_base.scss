@@ -1,7 +1,6 @@
 *,*::after,*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html {
@@ -28,3 +27,13 @@ body {
     --dark-grayish-magenta: hsl(303, 10%, 53%);
     --light-grayish-magenta: hsl(300, 24%, 96%);
 }
+.attribution {
+        font-size: 11px;
+        text-align: center;
+        display: none;
+}
+.attribution a {
+        color: hsl(228, 45%, 44%);
+}
+ 
+

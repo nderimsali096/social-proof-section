@@ -1,7 +1,80 @@
+.container {
+  margin: 9rem 0;
+  margin-left: 15rem;
+  margin-right: 10rem; }
+
+.section-about {
+  display: flex;
+  justify-content: space-between;
+  margin: 9rem 0; }
+
+.information {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 50%; }
+  .information__tittle {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--very-dark-magenta);
+    margin-bottom: 1rem; }
+  .information__info {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--dark-grayish-magenta); }
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 50%;
+  margin-right: 15rem; }
+  .rating__reviews {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 3rem;
+    width: 35rem;
+    background-color: var(--light-grayish-magenta);
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    align-self: flex-start; }
+  .rating__report-guru {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 3rem;
+    width: 35rem;
+    background-color: var(--light-grayish-magenta);
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    align-self: center; }
+  .rating__best-tech {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 3rem;
+    width: 35rem;
+    background-color: var(--light-grayish-magenta);
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    align-self: flex-end; }
+  .rating__stars {
+    margin-right: 1.4rem; }
+    .rating__stars--item {
+      height: 1.5rem;
+      width: 1.5rem;
+      padding: 0.2rem; }
+  .rating__site {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--very-dark-magenta); }
+
 *, *::after, *::before {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
 html {
   font-size: 62.5%; }
@@ -15,3 +88,11 @@ body {
   --soft-pink: hsl(333, 80%, 67%);
   --dark-grayish-magenta: hsl(303, 10%, 53%);
   --light-grayish-magenta: hsl(300, 24%, 96%); }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none; }
+
+.attribution a {
+  color: #3e52a3; }
