@@ -86,7 +86,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 75%;
+        width: 70%;
         height: 5rem;
         align-self: center; } }
   .rating__report-guru {
@@ -105,7 +105,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 75%;
+        width: 70%;
         height: 5rem;
         align-self: center; } }
   .rating__best-tech {
@@ -123,7 +123,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 75%;
+        width: 70%;
         height: 5rem;
         align-self: center; } }
   .rating__stars {
@@ -162,6 +162,11 @@
   @media only screen and (max-width: 56.25em) {
     .card {
       margin: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .card {
+      width: 75%;
+      margin: 1rem auto;
+      height: 18rem; } }
   .card__inside {
     padding: 1rem 1rem; }
   .card__top {
@@ -182,7 +187,8 @@
       color: var(--soft-pink); }
   .card__bottom--message {
     color: #d3d3d3;
-    font-weight: 500; }
+    font-weight: 500;
+    line-height: 2; }
   .card--1 {
     align-self: flex-start; }
   .card--2 {

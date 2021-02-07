@@ -1,3 +1,5 @@
+
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -7,9 +9,9 @@
         width: 100%;
         margin: 5.5rem 0;
      };
-
-    
 }
+
+
 
 .section-about {
     display: flex;
@@ -112,7 +114,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 75%;
+            width: 70%;
             height: 5rem;
             align-self: center;
          };
@@ -135,7 +137,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 75%;
+            width: 70%;
             height: 5rem;
             align-self: center;
          };
@@ -155,10 +157,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 75%;
+            width: 70%;
             height: 5rem;
             align-self: center;
-
          };
     }
 
@@ -211,6 +212,12 @@
         margin: 2rem;
     };
 
+    @media only screen and (max-width: 37.5em) { // 600px
+        width: 75%;
+        margin: 1rem auto;
+        height: 18rem;
+     };
+
     &__inside {
        padding: 1rem 1rem;
     }
@@ -243,6 +250,7 @@
         &--message {
             color: #d3d3d3;
             font-weight: 500;
+            line-height: 2;
         }
     }
 
