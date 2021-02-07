@@ -20,7 +20,7 @@
 
     &__tittle {
         font-size: 4rem;
-        font-weight: 900;
+        font-weight: 700;
         font-family: 'Spartan' Helvetica;
         letter-spacing: 2px;
         color: var(--very-dark-magenta);
@@ -30,7 +30,7 @@
 
     &__info {
         font-size: 1.5rem;
-        font-weight: 400;
+        font-weight: 500;
         color: var(--dark-grayish-magenta);
     }
 }
@@ -113,12 +113,15 @@
 
 .card {
     font-size: 1.1rem;
-    font-weight: 700;
     background-color: var(--very-dark-magenta);
-    padding: 3rem;
+    padding: 2rem;
     margin: 0 2rem;
     border-radius: 10px;
     height: 80%;
+
+    &__inside {
+       padding: 1rem 1rem;
+    }
 
     &__top {
         display: flex;
@@ -134,18 +137,20 @@
 
         &--name {
             color: #ffffff;
+            font-weight: 700;
             margin-bottom: 0.5rem;
         }
 
         &--job {
-            color: var(--dark-grayish-magenta);
+            font-weight: 400;
+            color: var(--soft-pink);
         }
     }
 
     &__bottom {
         &--message {
-            color: var(--light-grayish-magenta);
-            margin-bottom: 1rem;
+            color: #d3d3d3;
+            font-weight: 500;
         }
     }
 
