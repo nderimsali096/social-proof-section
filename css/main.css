@@ -14,7 +14,8 @@
   @media only screen and (max-width: 56.25em) {
     .section-about {
       flex-direction: column;
-      margin: 2rem 0; } }
+      margin: 2rem 0;
+      letter-spacing: 0; } }
 
 .information {
   display: flex;
@@ -61,9 +62,10 @@
   padding: 1rem;
   width: 50%;
   margin-right: 3rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 65em) {
     .rating {
-      width: auto; } }
+      width: auto;
+      justify-content: space-evenly; } }
   @media only screen and (max-width: 37.5em) {
     .rating {
       margin: 0;
@@ -146,7 +148,7 @@
   justify-content: space-between;
   margin: 5rem 0;
   height: 25rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 65em) {
     .section-messages {
       flex-direction: column;
       height: fit-content;
@@ -159,10 +161,10 @@
   margin: 0 2rem;
   border-radius: 10px;
   height: 70%; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 65em) {
     .card {
       margin: 2rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 65em) {
     .card {
       width: 75%;
       margin: 1rem auto;
