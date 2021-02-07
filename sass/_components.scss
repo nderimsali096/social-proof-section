@@ -2,6 +2,13 @@
     width: 80%;
     margin: 0 auto;
     font-size: 15px;
+
+    @media only screen and (max-width: 37.5em) { // 600px
+        width: 100%;
+        margin: 5.5rem 0;
+     };
+
+    
 }
 
 .section-about {
@@ -9,6 +16,11 @@
     justify-content: space-between;
     margin: 9rem 0;
     //align-items: center;
+
+    @media only screen and (max-width: 56.25em) { // 900px
+        flex-direction: column;
+        margin: 2rem 0;
+    };
 }
 
 .information {
@@ -16,6 +28,15 @@
     flex-direction: column;
     padding: 1rem;
     width: 50%;
+
+    
+
+    @media only screen and (max-width: 56.25em) { // 900px
+        margin: 0 auto;
+        width: auto;
+     };
+
+     
     
 
     &__tittle {
@@ -26,24 +47,54 @@
         color: var(--very-dark-magenta);
         margin-bottom: 1rem;
 
+
+        @media only screen and (max-width: 56.25em) { // 900px
+            margin-bottom: 3rem;
+         };
+
+         @media only screen and (max-width: 37.5em) { // 600px
+            font-size: 2.5rem;
+            letter-spacing: 0;
+            text-align: center;
+            margin-bottom: 1.5rem;
+         };
+
     } 
 
     &__info {
         font-size: 1.5rem;
         font-weight: 500;
         color: var(--dark-grayish-magenta);
+        @media only screen and (max-width: 56.25em) { // 900px
+            margin-bottom: 3rem;
+         };
+
+         @media only screen and (max-width: 37.5em) { // 600px
+            font-size: 1.1rem;
+            letter-spacing: 0.2px;
+            text-align: center;
+            margin-bottom: 1.5rem;
+         };
     }
 }
 
 .rating {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     padding: 1rem;
     width: 50%;
     margin-right: 3rem;
     
+    @media only screen and (max-width: 56.25em) { // 900px
+        width: auto;
+     };
 
+     @media only screen and (max-width: 37.5em) { // 600px
+        margin: 0;
+        padding: 0;
+        width: auto;
+        justify-content: center;
+    }
 
     &__reviews {
         display: flex;
@@ -56,6 +107,15 @@
         border-radius: 10px;
         margin-bottom: 1.5rem;
         align-self: flex-start;
+
+        @media only screen and (max-width: 37.5em) { // 600px
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 75%;
+            height: 5rem;
+            align-self: center;
+         };
 
 
     }
@@ -71,6 +131,14 @@
         border-radius: 10px;
         margin-bottom: 1.5rem;
         align-self: center;
+        @media only screen and (max-width: 37.5em) { // 600px
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 75%;
+            height: 5rem;
+            align-self: center;
+         };
     }
 
     &__best-tech {
@@ -83,6 +151,15 @@
         padding: 1rem 3rem;
         border-radius: 10px;
         align-self: flex-end;
+        @media only screen and (max-width: 37.5em) { // 600px
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 75%;
+            height: 5rem;
+            align-self: center;
+
+         };
     }
 
     &__stars {
@@ -93,6 +170,9 @@
             width: 1.5rem;
             padding: 0.2rem;
         }
+        @media only screen and (max-width: 37.5em) { // 600px
+            margin-bottom: 0.8rem;
+         };
     }
 
     &__site {
@@ -106,9 +186,17 @@
 .section-messages {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 5rem 0;
-    height: 17rem;
+    height: 25rem;
+
+    @media only screen and (max-width: 56.25em) { // 900px
+        flex-direction: column;
+        height: fit-content;
+        margin: 2rem 0;
+    };
+
+
 }
 
 .card {
@@ -117,7 +205,11 @@
     padding: 2rem;
     margin: 0 2rem;
     border-radius: 10px;
-    height: 80%;
+    height: 70%;
+
+    @media only screen and (max-width: 56.25em) { // 900px
+        margin: 2rem;
+    };
 
     &__inside {
        padding: 1rem 1rem;
@@ -155,7 +247,7 @@
     }
 
     &--1 {
-        align-self: flex-end;
+        align-self: flex-start;
     }
 
     &--2 {
@@ -163,6 +255,6 @@
     }
 
     &--3 {
-        align-self: flex-start;
+        align-self: flex-end;
     }
 }
